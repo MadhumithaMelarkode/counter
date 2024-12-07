@@ -23,7 +23,7 @@ sbtn.addEventListener('click',()=>
             setMins();
         }
         secs.innerText=k<10?'0'+k:k;
-        },0.1)
+        },1000)
 })
 function setMins()
 {   
