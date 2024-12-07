@@ -23,7 +23,7 @@ sbtn.addEventListener('click',()=>
             setMins();
         }
         secs.innerText=k<10?'0'+k:k;
-        },1000)
+        },0.1)
 })
 function setMins()
 {   
@@ -38,17 +38,17 @@ function setMins()
 function setHours()
 {
     i++;
-    if(time.innerText==='PM')
+    if(time.innerText==='AM')
     {
-    if(i==13)
+    if(i===12)
     {
         i=0;
-        time.innerText='AM'
+        time.innerText='PM'
 
     }
     }
     else{
-        time.innerText='PM'
+        time.innerText='AM'
     }
     hrs.innerText=i<10?'0'+i:i;
 }
@@ -60,8 +60,9 @@ clearInterval(timerId);
 })
 ebtn.addEventListener("click",()=>
     {
-
+    sbtn.disabled=false;
     hrs.innerText='00';
     mins.innerText='00';
     secs.innerText='00';
+    clearInterval(timerId);
 })
