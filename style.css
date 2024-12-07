@@ -1,0 +1,52 @@
+*{
+    border:0;
+    padding:0;
+    margin:0;
+}
+.container{
+    background-image:url("./counter_bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.content{
+    display:flex;
+    align-items:center;
+}
+.timer{
+    border:2px solid white;
+    border-radius: 0.2rem;;
+    color:white;
+    padding:0.3rem;
+    margin:0.3rem;
+}
+.container p{
+    font-weight: bold;
+    font-size:1.6rem;
+    color:white;
+}
+.container .btns{
+    display:flex;        
+    justify-content:center;
+    align-items:center;
+
+}
+.buttons{
+    border:2px solid white;
+    padding:0.3rem;
+    margin:0.3rem;
+    border-radius:0.2rem;
+    font-size:1rem;
+    font-weight:500;
+    background:none;
+    color:white;
+}
+#time{
+    /* border:2px solid white; */
+    padding:0.3rem;
+    color:white;
+}
