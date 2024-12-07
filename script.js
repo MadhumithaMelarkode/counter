@@ -64,5 +64,8 @@ ebtn.addEventListener("click",()=>
     hrs.innerText='00';
     mins.innerText='00';
     secs.innerText='00';
+    i=0;
+    j=0;
+    k=0;
     clearInterval(timerId);
 })
